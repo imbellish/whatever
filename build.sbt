@@ -1,18 +1,16 @@
+// https://github.com/earldouglas/xsbt-web-plugin#starting-from-scratch
 organization := "org.lifetime"
 
 name := "whatever"
 
 version := "1.0"
 
-seq(com.github.siasia.WebPlugin.webSettings :_*)
+jetty()
 
 libraryDependencies ++= {
   val liftVersion = "2.6-RC1"
   Seq(
-    "net.liftweb" %% "lift-webkit" % liftVersion % "compile" //,
-    //"org.eclipse.jetty" % "jetty-webapp" % "8.1.7.v20120910"  %
-    //  "container,test",
-    //"org.eclipse.jetty.orbit" % "javax.servlet" % "3.0.0.v201112011016" %
-    //  "container,compile" artifacts Artifact("javax.servlet", "jar", "jar")
+    "net.liftweb" %% "lift-webkit" % liftVersion % "compile",
+    "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided"
   )
 }

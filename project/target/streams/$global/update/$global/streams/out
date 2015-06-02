@@ -5,6 +5,12 @@
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.earldouglas#xsbt-web-plugin;1.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.earldouglas#xsbt-web-plugin;1.1.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.earldouglas#xsbt-web-plugin;1.1.0[0m
+[0m[[0mdebug[0m] [0m	found com.earldouglas#xsbt-web-plugin;1.1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.github.mpeltonen#sbt-idea;1.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.6.0 {compile=[default(compile)]}[0m
@@ -35,6 +41,8 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
@@ -56,6 +64,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
@@ -77,7 +87,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b0a0900[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68ec1990[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -774,6 +784,8 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
@@ -1263,6 +1275,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
@@ -1286,6 +1300,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile][0m
@@ -1822,6 +1838,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#whatever-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.earldouglas#xsbt-web-plugin;1.1.0!xsbt-web-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.6.0!sbt-idea.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.0.1!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
@@ -1880,7 +1897,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1250ms :: artifacts dl 31ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 756ms :: artifacts dl 21ms[0m
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT compile produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT runtime produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT test produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-test.xml[0m
@@ -1894,5 +1911,5 @@
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT docs produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT pom produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#whatever-build;0.1-SNAPSHOT scala-tool produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1250ms resolve - 31ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (756ms resolve - 21ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -13,8 +13,7 @@ class Boot {
     LiftRules.addToPackages("org.lifetime.liftfromscratch")
 
     // Build SiteMap
-    def site
-    map(): SiteMap = SiteMap(
+    def sitemap(): SiteMap = SiteMap(
       Menu.i("Home") / "index"
     )
 

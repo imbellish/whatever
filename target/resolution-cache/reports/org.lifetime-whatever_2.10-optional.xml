@@ -6,8 +6,8 @@
 		module="whatever_2.10"
 		revision="1.0"
 		conf="optional"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150602095904"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, container"
+		date="20150602105802"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

@@ -6,17 +6,29 @@
 		module="whatever_2.10"
 		revision="1.0"
 		conf="compile-internal"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150602095904"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, container"
+		date="20150602105802"/>
 	<dependencies>
+		<module organisation="javax.servlet" name="javax.servlet-api">
+			<revision name="3.0.1" status="release" pubdate="20110712134053" resolver="public" artresolver="public" homepage="http://servlet-spec.java.net" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="successful" details="" size="12633" time="704" location="/home/training/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.0.1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.pom"/>
+				<caller organisation="org.lifetime" name="whatever_2.10" conf="optional, compile, provided, compile-internal" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.servlet-api" type="jar" ext="jar" status="successful" details="" size="85353" time="1307" location="/home/training/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="net.liftweb" name="lift-webkit_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202655" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="8622" time="638" location="/home/training/.ivy2/cache/net.liftweb/lift-webkit_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-webkit_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-webkit_2.10/2.6-RC1/lift-webkit_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="3989" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-webkit_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-webkit_2.10/2.6-RC1/lift-webkit_2.10-2.6-RC1.pom"/>
 				<caller organisation="org.lifetime" name="whatever_2.10" conf="optional, compile, provided, compile-internal" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="lift-webkit_2.10" type="jar" ext="jar" status="successful" details="" size="5954388" time="25661" location="/home/training/.ivy2/cache/net.liftweb/lift-webkit_2.10/jars/lift-webkit_2.10-2.6-RC1.jar">
+					<artifact name="lift-webkit_2.10" type="jar" ext="jar" status="no" details="" size="5954388" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-webkit_2.10/jars/lift-webkit_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-webkit_2.10/2.6-RC1/lift-webkit_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>
@@ -34,13 +46,13 @@
 			</revision>
 		</module>
 		<module organisation="net.liftweb" name="lift-util_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202451" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="2">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202451" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="2">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="8962" time="673" location="/home/training/.ivy2/cache/net.liftweb/lift-util_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-util_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-util_2.10/2.6-RC1/lift-util_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="4433" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-util_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-util_2.10/2.6-RC1/lift-util_2.10-2.6-RC1.pom"/>
 				<caller organisation="net.liftweb" name="lift-webkit_2.10" conf="default, compile, runtime, master" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="lift-util_2.10" type="jar" ext="jar" status="successful" details="" size="1791148" time="7469" location="/home/training/.ivy2/cache/net.liftweb/lift-util_2.10/jars/lift-util_2.10-2.6-RC1.jar">
+					<artifact name="lift-util_2.10" type="jar" ext="jar" status="no" details="" size="1791148" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-util_2.10/jars/lift-util_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-util_2.10/2.6-RC1/lift-util_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>
@@ -118,26 +130,26 @@
 			</revision>
 		</module>
 		<module organisation="net.liftweb" name="lift-markdown_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202431" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="11">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202431" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="11">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="7395" time="649" location="/home/training/.ivy2/cache/net.liftweb/lift-markdown_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-markdown_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-markdown_2.10/2.6-RC1/lift-markdown_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="3122" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-markdown_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-markdown_2.10/2.6-RC1/lift-markdown_2.10-2.6-RC1.pom"/>
 				<caller organisation="net.liftweb" name="lift-util_2.10" conf="compile, runtime" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="lift-markdown_2.10" type="jar" ext="jar" status="successful" details="" size="456558" time="2454" location="/home/training/.ivy2/cache/net.liftweb/lift-markdown_2.10/jars/lift-markdown_2.10-2.6-RC1.jar">
+					<artifact name="lift-markdown_2.10" type="jar" ext="jar" status="no" details="" size="456558" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-markdown_2.10/jars/lift-markdown_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-markdown_2.10/2.6-RC1/lift-markdown_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.liftweb" name="lift-json_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202413" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202413" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="7548" time="695" location="/home/training/.ivy2/cache/net.liftweb/lift-json_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-json_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-json_2.10/2.6-RC1/lift-json_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="3299" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-json_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-json_2.10/2.6-RC1/lift-json_2.10-2.6-RC1.pom"/>
 				<caller organisation="net.liftweb" name="lift-util_2.10" conf="compile, runtime" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="lift-json_2.10" type="jar" ext="jar" status="successful" details="" size="486893" time="1781" location="/home/training/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.6-RC1.jar">
+					<artifact name="lift-json_2.10" type="jar" ext="jar" status="no" details="" size="486893" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-json_2.10/2.6-RC1/lift-json_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>
@@ -155,39 +167,38 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scalap">
-			<revision name="2.10.4" status="release" pubdate="20140318154827" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
-			"/>
-				<metadata-artifact status="successful" details="" size="1805" time="699" location="/home/training/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.4.xml" searched="true" original-local-location="/home/training/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.4/scalap-2.10.4.pom"/>
+			<revision name="2.10.4" status="release" pubdate="20140318154827" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2524" time="0" location="/home/training/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.4/scalap-2.10.4.pom"/>
 				<caller organisation="net.liftweb" name="lift-json_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="scalap" type="jar" ext="jar" status="successful" details="" size="853905" time="2981" location="/home/training/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.4.jar">
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="853905" time="0" location="/home/training/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.4/scalap-2.10.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.liftweb" name="lift-actor_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202353" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="5">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202353" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="5">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="7373" time="666" location="/home/training/.ivy2/cache/net.liftweb/lift-actor_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-actor_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-actor_2.10/2.6-RC1/lift-actor_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="3155" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-actor_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-actor_2.10/2.6-RC1/lift-actor_2.10-2.6-RC1.pom"/>
 				<caller organisation="net.liftweb" name="lift-util_2.10" conf="compile, runtime" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="lift-actor_2.10" type="jar" ext="jar" status="successful" details="" size="117479" time="901" location="/home/training/.ivy2/cache/net.liftweb/lift-actor_2.10/jars/lift-actor_2.10-2.6-RC1.jar">
+					<artifact name="lift-actor_2.10" type="jar" ext="jar" status="no" details="" size="117479" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-actor_2.10/jars/lift-actor_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-actor_2.10/2.6-RC1/lift-actor_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.liftweb" name="lift-common_2.10">
-			<revision name="2.6-RC1" status="release" pubdate="20140729202405" resolver="public" artresolver="public" homepage="http://www.liftweb.net" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="6">
+			<revision name="2.6-RC1" status="release" pubdate="20140729202405" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.liftweb.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="6">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="7805" time="604" location="/home/training/.ivy2/cache/net.liftweb/lift-common_2.10/ivy-2.6-RC1.xml" searched="true" original-local-location="/home/training/.ivy2/cache/net.liftweb/lift-common_2.10/ivy-2.6-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-common_2.10/2.6-RC1/lift-common_2.10-2.6-RC1.pom"/>
+				<metadata-artifact status="no" details="" size="3461" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-common_2.10/ivy-2.6-RC1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/liftweb/lift-common_2.10/2.6-RC1/lift-common_2.10-2.6-RC1.pom"/>
 				<caller organisation="net.liftweb" name="lift-actor_2.10" conf="compile, runtime" rev="2.6-RC1" rev-constraint-default="2.6-RC1" rev-constraint-dynamic="2.6-RC1" callerrev="2.6-RC1"/>
 				<artifacts>
-					<artifact name="lift-common_2.10" type="jar" ext="jar" status="successful" details="" size="193871" time="1386" location="/home/training/.ivy2/cache/net.liftweb/lift-common_2.10/jars/lift-common_2.10-2.6-RC1.jar">
+					<artifact name="lift-common_2.10" type="jar" ext="jar" status="no" details="" size="193871" time="0" location="/home/training/.ivy2/cache/net.liftweb/lift-common_2.10/jars/lift-common_2.10-2.6-RC1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/liftweb/lift-common_2.10/2.6-RC1/lift-common_2.10-2.6-RC1.jar"/>
 					</artifact>
 				</artifacts>

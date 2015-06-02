@@ -14,3 +14,6 @@ container:start
 console
 container: start;
 ~; container:start; container:reload /
+console
+container:start
+~; container:start; container:reload \
