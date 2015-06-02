@@ -4,15 +4,31 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-
     <servlet>
-        <servlet-name>my servlet</servlet-name>
-        <servlet-class>servlets.MyServlet</servlet-class>
+        <servlet-name>Home Page</servlet-name>
+        <servlet-class>servlets.HomePage</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>my servlet</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <servlet-name>Home Page</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Home Page</servlet-name>
+        <url-pattern>/home/</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Header App</servlet-name>
+        <servlet-class>servlets.HeaderApp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Header App</servlet-name>
+        <url-pattern>/headers/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Header App</servlet-name>
+        <url-pattern>/headers</url-pattern>
+    </servlet-mapping>
 </web-app>

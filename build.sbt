@@ -11,6 +11,10 @@ libraryDependencies ++= {
   val liftVersion = "2.6-RC1"
   Seq(
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile",
-    "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided"
+    "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
+    "org.scalatra" %% "scalatra" % "2.3.0",
+    "org.scalatra" %% "scalatra-scalate" % "2.3.0",
+    "org.scalatra" %% "scalatra-specs2" % "2.3.0"
+    //"scalikejdbc
   )
 }

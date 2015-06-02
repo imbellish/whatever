@@ -7,14 +7,14 @@
 		revision="1.0"
 		conf="container"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, container"
-		date="20150602105802"/>
+		date="20150602133953"/>
 	<dependencies>
 		<module organisation="org.eclipse.jetty" name="jetty-runner">
-			<revision name="9.2.1.v20140609" status="release" pubdate="20140609144158" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="0">
-				<metadata-artifact status="successful" details="" size="3498" time="694" location="/home/training/.ivy2/cache/org.eclipse.jetty/jetty-runner/ivy-9.2.1.v20140609.xml" searched="true" original-local-location="/home/training/.ivy2/cache/org.eclipse.jetty/jetty-runner/ivy-9.2.1.v20140609.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.2.1.v20140609/jetty-runner-9.2.1.v20140609.pom"/>
+			<revision name="9.2.1.v20140609" status="release" pubdate="20140609144158" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<metadata-artifact status="no" details="" size="14531" time="0" location="/home/training/.ivy2/cache/org.eclipse.jetty/jetty-runner/ivy-9.2.1.v20140609.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.2.1.v20140609/jetty-runner-9.2.1.v20140609.pom"/>
 				<caller organisation="org.lifetime" name="whatever_2.10" conf="container" rev="9.2.1.v20140609" rev-constraint-default="9.2.1.v20140609" rev-constraint-dynamic="9.2.1.v20140609" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jetty-runner" type="jar" ext="jar" status="successful" details="" size="5232596" time="11540" location="/home/training/.ivy2/cache/org.eclipse.jetty/jetty-runner/jars/jetty-runner-9.2.1.v20140609.jar">
+					<artifact name="jetty-runner" type="jar" ext="jar" status="no" details="" size="5232596" time="0" location="/home/training/.ivy2/cache/org.eclipse.jetty/jetty-runner/jars/jetty-runner-9.2.1.v20140609.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.2.1.v20140609/jetty-runner-9.2.1.v20140609.jar"/>
 					</artifact>
 				</artifacts>

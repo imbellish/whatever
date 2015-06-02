@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-class MyServlet extends HttpServlet {
+import org.scalatra._
+
+class HomePage extends HttpServlet {
 
   override def doGet(request: HttpServletRequest, response: HttpServletResponse) {
 
@@ -21,8 +23,8 @@ class MyServlet extends HttpServlet {
           <p>Get PostMan for google chrome to debug it</p>
           <h2>To do list:</h2>
           <ul>
-            <li>Figure out routing. This is currently just a catch all.</li>
             <li>create a branch for simple JSON webservices boilerplate</li>
+            <li>(that's already been done with scalatra</li>
           </ul>
         </body>
       </html>
@@ -32,33 +34,34 @@ class MyServlet extends HttpServlet {
     response.getWriter.write(printer.formatNodes(responseBody))
 
   }
+}
 
+class HeaderApp extends HttpServlet {
   override def doPost(request: HttpServletRequest, response: HttpServletResponse) {
-
-    
     response.setContentType("application/json")
     response.setCharacterEncoding("UTF-8")
-
 
     val headers = request.getAuthType()
     val query = request.getQueryString()
     val url = request.getRequestURL()
     val authorization = request.getHeader("Authorization")
 
-    val printer = new PrettyPrinter(80, 2)
+    val responseString =    "Hello, your auth header is " +
+      headers +
+      " and your query string is " +
+      query +
+      " and you are on " +
+      url  +
+      ". The authorization code you have is " +
+      authorization
 
-    response.setStatus(201)
-    response.getWriter.write(
-      "Hello, your auth header is " +
-        headers +
-        " and your query string is " +
-        query +
-        " and you are on " +
-        url  +
-        ". The authorization code you have is " +
-        authorization)
-
-
+    def respond() =
+    request match {
+      case _ if request.getHeader("Authorization") == null => response.setStatus(404); response.getWriter.write("You shall not pass")
+      case _ => response.setStatus(201); response.getWriter.write(responseString)
+    }
+    respond
   }
+
 
 }

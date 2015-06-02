@@ -20,3 +20,10 @@ container:start
 console
 :exit
 exit
+~; container:start; container:reload \
+sbt
+sbt compile
+compile
+exit
+compile
+~; container:start; container:reload \
