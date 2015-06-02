@@ -27,3 +27,11 @@ compile
 exit
 compile
 ~; container:start; container:reload \
+compile
+~; container:start; container:reload \
+compile
+~; container:start; container:reload \
+test
+sbt
+compile
+~; container:start; container:reload \

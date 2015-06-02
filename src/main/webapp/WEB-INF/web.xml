@@ -31,4 +31,14 @@
         <servlet-name>Header App</servlet-name>
         <url-pattern>/headers</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logging Service</servlet-name>
+        <servlet-class>servlets.LoggingService</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logging Service</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
 </web-app>

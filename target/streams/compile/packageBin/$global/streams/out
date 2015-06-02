@@ -1,25 +1,23 @@
 [0m[[0minfo[0m] [0mPackaging /home/training/Documents/whatever/target/scala-2.10/whatever_2.10-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	servlets/LoggingService$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/LoggingService$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	servlets/HeaderApp.class[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/HeaderApp.class[0m
 [0m[[0mdebug[0m] [0m	org/lifetime/liftfromscratch/liftfromscratch.class[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/org/lifetime/liftfromscratch/liftfromscratch.class[0m
-[0m[[0mdebug[0m] [0m	bootstrap/liftweb/Boot$$anonfun$boot$1.class[0m
-[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/bootstrap/liftweb/Boot$$anonfun$boot$1.class[0m
-[0m[[0mdebug[0m] [0m	bootstrap/liftweb/Boot.class[0m
-[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/bootstrap/liftweb/Boot.class[0m
 [0m[[0mdebug[0m] [0m	org/lifetime/liftfromscratch[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/org/lifetime/liftfromscratch[0m
 [0m[[0mdebug[0m] [0m	org[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/org[0m
-[0m[[0mdebug[0m] [0m	bootstrap/liftweb[0m
-[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/bootstrap/liftweb[0m
 [0m[[0mdebug[0m] [0m	org/lifetime[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/org/lifetime[0m
 [0m[[0mdebug[0m] [0m	servlets[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets[0m
 [0m[[0mdebug[0m] [0m	servlets/HomePage.class[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/HomePage.class[0m
-[0m[[0mdebug[0m] [0m	bootstrap[0m
-[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/bootstrap[0m
+[0m[[0mdebug[0m] [0m	servlets/ScalatraBootstrap.class[0m
+[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/ScalatraBootstrap.class[0m
+[0m[[0mdebug[0m] [0m	servlets/LoggingService.class[0m
+[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/LoggingService.class[0m
 [0m[[0minfo[0m] [0mDone packaging.[0m

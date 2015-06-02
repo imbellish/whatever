@@ -5,8 +5,12 @@ import scala.xml.PrettyPrinter
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
+import javax.servlet.ServletContext
+
 
 import org.scalatra._
+
+class ScalatraBootstrap extends LifeCycle
 
 class HomePage extends HttpServlet {
 
@@ -38,6 +42,8 @@ class HomePage extends HttpServlet {
 
 class HeaderApp extends HttpServlet {
   override def doPost(request: HttpServletRequest, response: HttpServletResponse) {
+    /* does not allow non-authorizeds posts */
+
     response.setContentType("application/json")
     response.setCharacterEncoding("UTF-8")
 
@@ -47,12 +53,12 @@ class HeaderApp extends HttpServlet {
     val authorization = request.getHeader("Authorization")
 
     val responseString =    "Hello, your auth header is " +
-      headers +
-      " and your query string is " +
-      query +
-      " and you are on " +
-      url  +
-      ". The authorization code you have is " +
+                            headers +
+                            " and your query string is " +
+                            query +
+                            " and you are on " +
+                            url  +
+                            ". The authorization code you have is " +
       authorization
 
     def respond() =
@@ -62,6 +68,16 @@ class HeaderApp extends HttpServlet {
     }
     respond
   }
+}
 
+class LoggingService extends ScalatraServlet {
+
+  def verify()
+  post("/:logType/:name") {
+    val logType = params("logType")
+    val name = params("name")
+    //ActivityLogging.write(logType, name)
+    "logged"
+  }
 
 }

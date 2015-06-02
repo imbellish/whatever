@@ -1,5 +1,6 @@
 package bootstrap.liftweb
 
+/*
 import net.liftweb.http.{Html5Properties, LiftRules, Req}
 import net.liftweb.sitemap.{Menu, SiteMap}
 
@@ -22,3 +23,4 @@ class Boot {
       new Html5Properties(r.userAgent))
   }
 }
+*/
