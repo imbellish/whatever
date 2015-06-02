@@ -1,0 +1,16 @@
+gen-idea
+container:start; container:reload
+~; container:start; container:reload /
+gen-idea
+~; container:start; container:reload /
+console
+:exit
+exit
+console
+container: start
+container: *
+container:start
+~; container:start; container:reload /
+console
+container: start;
+~; container:start; container:reload /
