@@ -72,7 +72,6 @@ class HeaderApp extends HttpServlet {
 
 class LoggingService extends ScalatraServlet {
 
-  def verify()
   post("/:logType/:name") {
     val logType = params("logType")
     val name = params("name")

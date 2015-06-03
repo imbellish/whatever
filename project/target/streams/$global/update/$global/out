@@ -15,6 +15,12 @@
 [debug] sbt-chain: module revision found in cache: org.jetbrains#sbt-structure;1.0.3
 [debug] 	typesafe-ivy-releases: revision in cache: org.jetbrains#sbt-structure;1.0.3
 [debug] 	found org.jetbrains#sbt-structure;1.0.3 in sbt-chain
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
+[info] Resolving com.earldouglas#xsbt-web-plugin;1.1.0 ...
+[debug] sbt-chain: Checking cache for: dependency: com.earldouglas#xsbt-web-plugin;1.1.0 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.earldouglas#xsbt-web-plugin;1.1.0
+[debug] 	typesafe-ivy-releases: revision in cache: com.earldouglas#xsbt-web-plugin;1.1.0
+[debug] 	found com.earldouglas#xsbt-web-plugin;1.1.0 in sbt-chain
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [info] Resolving com.github.mpeltonen#sbt-idea;1.6.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.6.0 {compile=[default(compile)]}
@@ -38,6 +44,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)]
 [debug] == resolving dependencies default#global-plugins;0.0->org.jetbrains#sbt-structure;1.0.3 [compile->default(compile)]
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile]
@@ -52,6 +59,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)]
 [debug] == resolving dependencies default#global-plugins;0.0->org.jetbrains#sbt-structure;1.0.3 [compile->default(compile)]
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile]
@@ -64,7 +72,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52dd78b9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@334cb562
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.2
 [debug] 	found org.scala-lang#scala-library;2.10.2 in sbt-chain
@@ -620,6 +628,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)]
 [debug] == resolving dependencies default#global-plugins;0.0->org.jetbrains#sbt-structure;1.0.3 [compile->default(compile)]
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile]
@@ -967,6 +976,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)]
 [debug] == resolving dependencies default#global-plugins;0.0->org.jetbrains#sbt-structure;1.0.3 [compile->default(compile)]
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile]
@@ -983,6 +993,7 @@
 [debug] == resolving dependencies for default#whatever-build;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->default#global-plugins;0.0 [compile->default(compile)]
 [debug] == resolving dependencies default#global-plugins;0.0->org.jetbrains#sbt-structure;1.0.3 [compile->default(compile)]
+[debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.earldouglas#xsbt-web-plugin;1.1.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->default(compile)]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->runtime]
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.6.0 [compile->compile]
@@ -1377,6 +1388,7 @@
 [debug] == resolving dependencies default#whatever-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in /home/training/Documents/whatever/project/target/resolution-cache/default/whatever-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml
 [debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] com.earldouglas#xsbt-web-plugin;1.1.0!xsbt-web-plugin.jar
 [debug] 	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.6.0!sbt-idea.jar
 [debug] 	[NOT REQUIRED] org.jetbrains#sbt-structure;1.0.3!sbt-structure.jar
 [debug] 	[NOT REQUIRED] commons-io#commons-io;2.0.1!commons-io.jar
@@ -1427,7 +1439,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.0!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 393ms :: artifacts dl 12ms
+[debug] :: resolution report :: resolve 471ms :: artifacts dl 14ms
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT compile produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-compile.xml
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT runtime produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-runtime.xml
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT test produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-test.xml
@@ -1441,5 +1453,5 @@
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT docs produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-docs.xml
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT pom produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-pom.xml
 [debug] 	report for default#whatever-build;0.1-SNAPSHOT scala-tool produced in /home/training/Documents/whatever/project/target/resolution-cache/reports/default-whatever-build-scala-tool.xml
-[debug] 	resolve done (393ms resolve - 12ms download)
+[debug] 	resolve done (471ms resolve - 14ms download)
 [info] Done updating.

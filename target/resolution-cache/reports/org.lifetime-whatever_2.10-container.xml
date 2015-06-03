@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="container"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, container"
-		date="20150602150523"/>
+		date="20150603083647"/>
 	<dependencies>
 		<module organisation="org.eclipse.jetty" name="jetty-runner">
 			<revision name="9.2.1.v20140609" status="release" pubdate="20140609144158" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">

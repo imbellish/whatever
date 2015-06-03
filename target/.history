@@ -35,3 +35,7 @@ test
 sbt
 compile
 ~; container:start; container:reload \
+compile
+exit
+compile
+~; container:start; container:reload
