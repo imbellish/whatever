@@ -71,12 +71,26 @@ class HeaderApp extends HttpServlet {
 }
 
 class LoggingService extends ScalatraServlet {
+//training@ac-ubuntu:~/Documents/whatever$ mysql -h localhost -u root -p
 
   post("/:logType/:name") {
     val logType = params("logType")
     val name = params("name")
-    //ActivityLogging.write(logType, name)
+    ActivityLogging.write(logType, name)
     "logged"
+  }
+
+}
+
+object ActivityLogging {
+  import scalikejdbc._
+  ConnectionPool.singleton("jdbc:mysql://localhost/activity", "root", "training")
+  implicit val session = AutoSession
+
+  //class Event(val name: String, val created: Timestamp)
+
+  def write(event: String, name: String) = {
+    sql"insert into logging(event, name) values (${event}, ${name})".update.apply()
   }
 
 }

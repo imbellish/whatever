@@ -39,3 +39,13 @@ compile
 exit
 compile
 ~; container:start; container:reload
+test
+exit
+compile
+test
+~; container:start; container:reload
+console
+exit
+compile
+console
+test

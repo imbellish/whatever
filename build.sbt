@@ -12,11 +12,13 @@ libraryDependencies ++= {
   Seq(
     //"net.liftweb" %% "lift-webkit" % liftVersion % "compile",
     "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided",
+    "org.scalikejdbc" %% "scalikejdbc" % "2.2.6",
     "org.scalatra" %% "scalatra" % "2.3.0",
     "org.scalatra" %% "scalatra-scalate" % "2.3.0",
     "org.scalatra" %% "scalatra-json" % "2.3.0",
     "org.json4s" %% "json4s-jackson" % "3.2.0",
-    "org.scalatra" %% "scalatra-scalatest" % "2.4.0.RC1" % "test"
+    "org.scalatra" %% "scalatra-scalatest" % "2.4.0.RC1" % "test",
+    "mysql" % "mysql-connector-java" % "5.1.12"
     //"scalikejdbc
   )
 }

@@ -2,6 +2,10 @@
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	servlets/LoggingService$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/LoggingService$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	servlets/ActivityLogging$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/ActivityLogging$.class[0m
+[0m[[0mdebug[0m] [0m	servlets/ActivityLogging.class[0m
+[0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/ActivityLogging.class[0m
 [0m[[0mdebug[0m] [0m	servlets/HeaderApp.class[0m
 [0m[[0mdebug[0m] [0m	  /home/training/Documents/whatever/target/scala-2.10/classes/servlets/HeaderApp.class[0m
 [0m[[0mdebug[0m] [0m	org/lifetime/liftfromscratch/liftfromscratch.class[0m

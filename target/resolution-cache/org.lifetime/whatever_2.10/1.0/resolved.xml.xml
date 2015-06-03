@@ -4,7 +4,7 @@
 		module="whatever_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150603083647"
+		publication="20150603114040"
 	>
 		<description>
 		whatever
@@ -38,10 +38,12 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-runner" rev="9.2.1.v20140609" transitive="false" conf="container->default(compile)"/>
 		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" conf="provided->default(compile)"/>
+		<dependency org="org.scalikejdbc" name="scalikejdbc_2.10" rev="2.2.6" conf="compile->default(compile)"/>
 		<dependency org="org.scalatra" name="scalatra_2.10" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalatra" name="scalatra-scalate_2.10" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalatra" name="scalatra-json_2.10" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="org.json4s" name="json4s-jackson_2.10" rev="3.2.0" conf="compile->default(compile)"/>
 		<dependency org="org.scalatra" name="scalatra-scalatest_2.10" rev="2.4.0.RC1" conf="test->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.12" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
