@@ -10,6 +10,7 @@ import javax.servlet.ServletContext
 
 import org.scalatra._
 
+// pretty sure I don't use this class TODO
 class ScalatraBootstrap extends LifeCycle
 
 class HomePage extends HttpServlet {
@@ -28,7 +29,7 @@ class HomePage extends HttpServlet {
           <h2>To do list:</h2>
           <ul>
             <li>create a branch for simple JSON webservices boilerplate</li>
-            <li>(that's already been done with scalatra</li>
+            <li>that's already been done with scalatra</li>
           </ul>
         </body>
       </html>
@@ -52,6 +53,8 @@ class HeaderApp extends HttpServlet {
     val url = request.getRequestURL()
     val authorization = request.getHeader("Authorization")
 
+    // TODO make a better response
+
     val responseString =    "Hello, your auth header is " +
                             headers +
                             " and your query string is " +
@@ -60,11 +63,11 @@ class HeaderApp extends HttpServlet {
                             url  +
                             ". The authorization code you have is " +
       authorization
-
+    // return 403 (not authorized)
     def respond() =
     request match {
-      case _ if request.getHeader("Authorization") == null => response.setStatus(404); response.getWriter.write("You shall not pass")
-      case _ => response.setStatus(201); response.getWriter.write(responseString)
+      case _ if request.getHeader("Authorization") == null => response.setStatus(401); response.getWriter.write("You shall not pass")
+      case _ => response.setStatus(201); response.getWriter.write(responseString); ActivityLogging.writeHeaders(url.toString, authorization.toString)
     }
     respond
   }
@@ -76,7 +79,7 @@ class LoggingService extends ScalatraServlet {
   post("/:logType/:name") {
     val logType = params("logType")
     val name = params("name")
-    ActivityLogging.write(logType, name)
+    ActivityLogging.writeService(logType, name)
     "logged"
   }
 
@@ -84,13 +87,41 @@ class LoggingService extends ScalatraServlet {
 
 object ActivityLogging {
   import scalikejdbc._
+  /*
+  * Requires mysql db on your local system with the following table specs:
+  *
+  * Logging
+    +-------+-------------+------+-----+---------+----------------+
+    | Field | Type        | Null | Key | Default | Extra          |
+    +-------+-------------+------+-----+---------+----------------+
+    | id    | bigint(20)  | NO   | PRI | NULL    | auto_increment |
+    | event | varchar(50) | YES  |     | NULL    |                |
+    | time  | date        | YES  |     | NULL    |                |
+    | name  | varchar(30) | YES  |     | NULL    |                |
+    +-------+-------------+------+-----+---------+----------------+
+
+  * Headers
+    +--------+-------------+------+-----+---------+----------------+
+    | Field  | Type        | Null | Key | Default | Extra          |
+    +--------+-------------+------+-----+---------+----------------+
+    | id     | int(11)     | NO   | PRI | NULL    | auto_increment |
+    | header | varchar(50) | YES  |     | NULL    |                |
+    | url    | varchar(90) | YES  |     | NULL    |                |
+    +--------+-------------+------+-----+---------+----------------+
+
+  *
+   */
   ConnectionPool.singleton("jdbc:mysql://localhost/activity", "root", "training")
   implicit val session = AutoSession
 
   //class Event(val name: String, val created: Timestamp)
 
-  def write(event: String, name: String) = {
+  def writeService(event: String, name: String) = {
     sql"insert into logging(event, name) values (${event}, ${name})".update.apply()
+  }
+
+  def writeHeaders(url: String, header: String) = {
+    sql"insert into headers (header, url) values (${header}, ${url})".update.apply()
   }
 
 }

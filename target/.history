@@ -49,3 +49,8 @@ exit
 compile
 console
 test
+~; container:start; container:reload
+exit
+:help
+help
+tasks
